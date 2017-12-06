@@ -46,9 +46,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\PC_User\Desktop\vEngine\libs projects\viMathLib\headers;C:\Users\PC_User\Desktop\vEngine\libs projects\games\timelinefx-master\pugixml\include;C:\Users\PC_User\Desktop\vEngine\libs projects\games\timelinefx-master\timelinefx\source;C:\Users\PC_User\Desktop\vEngine\libs projects\games\SFGUI-master\include;C:\Users\PC_User\Desktop\vEngine\libs projects\games\Kairos-master;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\PC_User\Desktop\vEngine\libs projects\viMathLib\Debug;C:\Users\PC_User\Desktop\vEngine\libs projects\games\timelinefx-master\timelinefx\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>viMathLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -58,25 +61,38 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\PC_User\Desktop\vEngine\libs projects\viMathLib\headers;C:\Users\PC_User\Desktop\vEngine\libs projects\games\timelinefx-master\pugixml\include;C:\Users\PC_User\Desktop\vEngine\libs projects\games\timelinefx-master\timelinefx\source;C:\Users\PC_User\Desktop\vEngine\libs projects\games\SFGUI-master\include;C:\Users\PC_User\Desktop\vEngine\libs projects\games\Kairos-master;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\PC_User\Desktop\vEngine\libs projects\viMathLib\Release;C:\Users\PC_User\Desktop\vEngine\libs projects\games\timelinefx-master\timelinefx\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>viMathLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ColorHelper.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MathHelper.cpp" />
+    <ClCompile Include="Snake.cpp" />
+    <ClCompile Include="TextBox.cpp" />
     <ClCompile Include="Window.cpp" />
+    <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="game1.licenseheader" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ColorHelper.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="MathHelper.h" />
+    <ClInclude Include="Snake.h" />
+    <ClInclude Include="TextBox.h" />
     <ClInclude Include="Window.h" />
+    <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
